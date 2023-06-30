@@ -37,8 +37,8 @@
                 <td th:text="${employee.phone_no}"></td>
                 <td th:text="${employee.age}"></td>
                 <td th:text="${employee.dept}"></td>
-                <td><a th:href="@{/updateEmployee/{id}(id=${employee.id})}" class="btn btn-primary">Update</a>
-                    <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger">Delete</a></td>
+                <td><a th:href="@{/updateEmployeeForm/{id}(id=${employee.id})}" class="btn btn-primary">Update</a>
+                <td><a th:href="@{/deleteEmployee/{id}(id=${employee.id})}" class="btn btn-danger">Delete</a>
             </tr>
             </tbody>
         </table>

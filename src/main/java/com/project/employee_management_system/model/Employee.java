@@ -25,6 +25,20 @@ public class Employee {
         private String dept;
         @Column(name="phone_no")
         private long phone_no;
+
+        public Employee()
+        {
+        }
+        public Employee(long id,int age,Character gen,long phone_no,String name,String email_id,String dept)
+        {
+                this.id=id;
+                this.age=age;
+                this.gen=gen;
+                this.phone_no=phone_no;
+                this.name=name;
+                this.email_id=email_id;
+                this.dept=dept;
+        }
         public long getId() {
             return id;
         }
@@ -59,4 +73,5 @@ public class Employee {
         public void setAge(int age) {this.age = age;}
         public Character getGen() {return gen;}
         public void setGen(Character gen) {this.gen = gen;}
+
 }
